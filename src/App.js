@@ -9,7 +9,10 @@ import Senators from './Components/Senators'
 
 
 
+
+
 function App() {
+  document.title="Applet Home Page"
   return (
     <>
       <Switch>

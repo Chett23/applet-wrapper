@@ -14,9 +14,9 @@ import NotFound from './Pages/NotFound';
 import Testing from './Pages/Testing';
 
 
-
 class App extends Component {
   render() {
+    document.title="React Exercises Applet"
     return (
       <div>
         <Helmet />
