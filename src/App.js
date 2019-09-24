@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Switch, Route, NavLink } from 'react-router-dom';
+
+//subSites
+import DiceBag from './Components/DiceBag'
+import ReactExercises from './Components/ReactExercises'
+import Senators from './Components/Senators'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Switch>
+        <Route exact path={'/'} component={Home} />
+        <Route path={'/dicebag'} component={DiceBag} />
+        <Route path={'/react-exercises'} component={ReactExercises} />
+        <Route path={'/senators'} component={Senators} />
+      </Switch>
+    </>
   );
+}
+
+function Home() {
+  return (
+    <ul>
+      <li><NavLink to={'/dicebag'} >Dice Bag</NavLink></li>
+      <li><NavLink to={'/react-exercises'} >React Exercises</NavLink></li>
+      <li><NavLink to={'/senators'} >Senators</NavLink></li>
+    </ul>
+  )
 }
 
 export default App;
