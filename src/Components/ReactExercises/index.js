@@ -37,7 +37,7 @@ class App extends Component {
                   >Helio Training React Exercises</h1>
               <li>
                 <NavLink
-                  to='/react-exercises' 
+                  to='/react-exercises-applet' 
                   style={{
                     gridColumnStart: '3',
                     gridColumnEnd: 'span 1',
@@ -47,7 +47,7 @@ class App extends Component {
                 >Home</NavLink></li>
               <li>
                 <NavLink
-                  to='/Keylogger' 
+                  to='/react-exercises-applet/Keylogger' 
                   style={{
                     gridColumnStart: '4',
                     gridColumnEnd: 'span 1',
@@ -57,7 +57,7 @@ class App extends Component {
                 >Keylogger</NavLink></li>
               <li>
                 <NavLink
-                  to='/Calculator' 
+                  to='/react-exercises-applet/Calculator' 
                   style={{
                     gridColumnStart: '5',
                     gridColumnEnd: 'span 1',
@@ -67,7 +67,7 @@ class App extends Component {
                 >Calculator</NavLink></li>
               <li>
                 <NavLink
-                  to='/CodeList' 
+                  to='/react-exercises-applet/CodeList' 
                   style={{
                     gridColumnStart: '6',
                     gridColumnEnd: 'span 1',
@@ -77,7 +77,7 @@ class App extends Component {
                 >Code List</NavLink></li>
                 <li>
                   <NavLink
-                    to='/Testing' 
+                    to='/react-exercises-applet/Testing' 
                     style={{
                       gridColumnStart: '6',
                       gridColumnEnd: 'span 1',
@@ -87,17 +87,17 @@ class App extends Component {
                   >Testing</NavLink></li>
             </ul>
             <Switch> 
-              <Route exact path="/react-exercises" component={()=>(
+              <Route exact path="/react-exercises-applet" component={()=>(
                 <div style={{ textAlign:'center' }}>
                   <hr/>
                   <h1>Home</h1>
                 </div>
               )} />
-              <Route path="/Keylogger" component={Keylogger} />
-              <Route path="/Calculator" component={Calculator} />
-              <Route path="/CodeList" component={Codelist} />
-              <Route path="/Testing" component={Testing} />
-              <Route path="/Tacos" component={Tacos} />
+              <Route path="/react-exercises-applet/Keylogger" component={Keylogger} />
+              <Route path="/react-exercises-applet/Calculator" component={Calculator} />
+              <Route path="/react-exercises-applet/CodeList" component={Codelist} />
+              <Route path="/react-exercises-applet/Testing" component={Testing} />
+              <Route path="/react-exercises-applet/Tacos" component={Tacos} />
               <Route component={NotFound} />
             </Switch>
           </div>

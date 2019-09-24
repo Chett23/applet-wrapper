@@ -12,8 +12,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/senators" component={Senators} />
-        <Route exact path="/senator/:cspanid" component={Senator} />
+        <Route exact path="/senators-applet" component={Senators} />
+        <Route exact path="/senators-applet/senator/:cspanid" component={Senator} />
       </Switch>
     </Router>
   );

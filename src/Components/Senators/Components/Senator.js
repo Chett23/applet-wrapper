@@ -40,7 +40,7 @@ export default function Senator(props) {
           <SenatorInfoListItem>{`Party: ${senator.party}`}</SenatorInfoListItem>
         </SenatorList>
       </BodyText>
-      <SenatorLink to='/senators' style={{ alignSelf: 'flex-end' }}><Button>Go Back</Button></SenatorLink>
+      <SenatorLink to='/senators-applet' style={{ alignSelf: 'flex-end' }}><Button>Go Back</Button></SenatorLink>
     </MainCont>
   )
 

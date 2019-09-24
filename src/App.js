@@ -17,9 +17,9 @@ function App() {
     <>
       <Switch>
         <Route exact path={'/'} component={Home} />
-        <Route path={'/dicebag'} component={DiceBag} />
-        <Route path={'/react-exercises'} component={ReactExercises} />
-        <Route path={'/senators'} component={Senators} />
+        <Route path={'/dicebag-applet'} component={DiceBag} />
+        <Route path={'/react-exercises-applet'} component={ReactExercises} />
+        <Route path={'/senators-applet'} component={Senators} />
       </Switch>
     </>
   );
@@ -28,9 +28,9 @@ function App() {
 function Home() {
   return (
     <ul>
-      <li><NavLink to={'/dicebag'} >Dice Bag</NavLink></li>
-      <li><NavLink to={'/react-exercises'} >React Exercises</NavLink></li>
-      <li><NavLink to={'/senators'} >Senators</NavLink></li>
+      <li><NavLink to={'/dicebag-applet'} >Dice Bag</NavLink></li>
+      <li><NavLink to={'/react-exercises-applet'} >React Exercises</NavLink></li>
+      <li><NavLink to={'/senators-applet'} >Senators</NavLink></li>
     </ul>
   )
 }

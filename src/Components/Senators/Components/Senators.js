@@ -92,7 +92,7 @@ export default function Senators() {
               senator.description.toLowerCase().includes(search)
           }).map(senator => {
             let { cspanid } = senator.person
-            return <SenatorLink to={`/senator/${cspanid}`} key={cspanid}>
+            return <SenatorLink to={`/senators-applet/senator/${cspanid}`} key={cspanid}>
               <SenatorListItem>{`${senator.person.name}`}</SenatorListItem>
             </SenatorLink>
           })
